@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Roboto Slab', serif;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: wheat;
+  }
+  main {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 150px;
+    width: 250px;
+    display: flex;
+    box-shadow: 0 0 20px 2px rgb(150, 149, 149);
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-flow: column;
+  }
+  main::after {
+    position: absolute;
+    content: 'PASSWORD';
+    font-weight: bold;
+    font-size: 25px;
+    transform: translateY(-55px);
+    color: rgb(9, 137, 35);
+  }
+
+  .inputdiv {
+    height: 29px;
+    width: 90%;
+    border-radius: 3px;
+    background-color: white;
+    display: flex;
+    outline: 2px solid rgba(155, 153, 153, 0.566);
+    justify-content: start;
+    align-items: center;
+  }
+  .inputpass {
+    height: 30px;
+    width: 75%;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    background-color: transparent;
+  }
+  .previewpass {
+    position: absolute;
+    transform: translateX(90px) translateY(-17px);
+    height: 20px;
+    width: 20px;
+    display: grid;
+    place-content: center;
+  }
+  .bar {
+    background-color: rgb(0, 0, 0);
+    width: 80%;
+    height: 7px; 
+    border-radius: 40px;
+    transform: translateY(4px);
+  }
+
+  .bar .strenght {
+    height: 100%;
+    width: 0%;
+    background-color: rgb(147, 147, 147);
+    border-radius: 40px;
+    transition: 0.5s;
+  }
+
+  .passstrenght-text{
+    height: 20px;
+    width: 90%;
+    text-align: center;
+    transform: translateY(15px);
+    font-size: 15px;
+    text-shadow: 1px 2px 3px rgb(176, 174, 174);
+  }

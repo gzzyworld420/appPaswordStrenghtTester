@@ -25,7 +25,7 @@ var passwordconstrains = {
     //
     if (x < 8) {
       bar.setAttribute('style', `width:${2 * x}%;`)
-      alert('please enter a password between 8 to 20 character') 
+      
     }
     //
     else if (x > 8 && x < 20) { 

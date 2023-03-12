@@ -23,12 +23,12 @@ var passwordconstrains = {
     var x = string.length
 
     //
-    if (x < 3) {
+    if (x < 8) {
       bar.setAttribute('style', `width:${2 * x}%;`)
-      alert('please enter a password between 8 to 20 character')
+      alert('please enter a password between 8 to 20 character') 
     }
     //
-    else if (x > 8 && x < 20) {
+    else if (x > 8 && x < 20) { 
       //
       var checknum = string.find(num)
       function num(num) {
